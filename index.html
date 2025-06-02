@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS do Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <title>SOS Tubos - Tubos de Papelão Sustentáveis</title>
+    <style>
+      #map {
+        width: 100%;
+        height: 500px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-verde">
+      <header>
+        <div class="container">
+          <nav>
+            <div class="logo">
+              <a href="index.html"><img src="img/logo.png" alt="SOS Tubos - Logo" class="logo-img"></a>
+            </div>
+            <ul class="ul">
+              <li><a href="#"> Início </a></li>
+              <li><a href="#produtos"> Produtos </a></li>
+              <li><a href="#sustentabilidade"> Sustentabilidade </a></li>
+              <li><a href="#contato"> Contato </a></li>
+              <li>
+                <a href="#produtos"><button class="btn-gradiente">Solicitar Orçamento</button></a>
+              </li>
+            </ul>
+            <div class="menu-icon">
+              <img src="img/menu.png" alt="Menu" />
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="main-text">
+            <h1>Soluções em<br />Tubos de Papelão</h1>
+            <h2>Sustentabilidade e Qualidade</h2>
+            <div>
+              <button class="btn-gradiente">Entre em Contato</button>
+              <img src="img/verificado.png" alt="verificado" />
+            </div>
+          </div>
+          <div class="main-img">
+            <img src="img/tubos-banner.png" alt="Tubos de Papelão" />
+          </div>
+        </div>
+      </main>
+    </div>
+    <!--end backgroud verde-->
+    <section class="resultados">
+      <!--container-->
+      <div class="container">
+        <div class="resultados-text">
+          Comprometidos com a sustentabilidade e economia circular.
+        </div>
+        <div class="resultados-numero">
+          <p>
+            <span>100%</span>
+            Sustentável
+          </p>
+
+          <p>
+            <span>Economia</span>
+            Circular
+          </p>
+
+          <p>
+            <span>Redução</span>
+            de Resíduos
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="diferencias" id="sustentabilidade">
+      <div class="container">
+        <div class="card">
+        <img src="img/recycle.png" alt="Ícone de reciclagem" />
+        <h3 class="titulo">Sustentabilidade</h3>
+        <p>
+          Em um mundo em constante evolução, nosso compromisso com a sustentabilidade
+          se mantém firme, criando soluções que respeitam o meio ambiente.
+        </p>
+        </div>
+        <div class="card">
+        <img src="img/circular-economy.png" alt="Ícone de economia circular" />
+        <h3 class="titulo">Economia Circular</h3>
+        <p>
+          Nossos produtos fazem parte de um ciclo sustentável, onde os recursos são
+          aproveitados ao máximo, minimizando o impacto ambiental.
+        </p></div>
+        <div class="card">
+        <img src="img/zero-waste.png" alt="Ícone de zero resíduos" />
+        <h3 class="titulo">Redução de Resíduos</h3>
+        <p>
+          Trabalhamos constantemente para reduzir resíduos em nossos processos,
+          contribuindo para um futuro mais sustentável.
+        </p>
+      </div>
+    </section>
+    
+    <section class="melhores-lugares" id="produtos">
+      <div class="container">
+          <p class="azul">Nossos Produtos</p>
+            <h2>Soluções em Tubos de Papelão</h2>
+          <div class="cards">
+            <div class="card-item">
+              <img src="img/industrial-tube.png" alt="Tubo Industrial">
+              <p class="local-casa">Tubos Industriais</p>
+              <p class="nome-casa">Alta Resistência</p>
+              <p class="contato">
+                Ideal para aplicações<br>industriais pesadas
+              </p>
+              <button>Saiba Mais</button>
+            </div>
+
+            <div class="card-item">
+              <img src="img/commercial-tube.png" alt="Tubo Comercial">
+              <p class="local-casa">Tubos Comerciais</p>
+              <p class="nome-casa">Uso Geral</p>
+              <p class="contato">
+                Perfeito para<br>diversas aplicações
+              </p>
+              <button>Saiba Mais</button>
+            </div>
+            
+            <div class="card-item">
+              <img src="img/custom-tube.png" alt="Tubo Personalizado">
+              <p class="local-casa">Tubos Especiais</p>
+              <p class="nome-casa">Sob Medida</p>
+              <p class="contato">
+                Soluções<br>personalizadas
+              </p>
+              <button>Saiba Mais</button>
+            </div>
+            </div>
+          </div>
+      </div>
+      
+    </section>
+     <section class="newsletter">
+        <div class="container">
+            <div class="box-newsletter">
+                <h2>Solicite um Orçamento</h2>
+                <p>Entre em contato conosco para conhecer nossas soluções</p>
+                <form>
+                <input type="email" placeholder="Digite seu e-mail">
+                <button>Enviar</button>
+            </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="mapa">
+      <div class="container">
+        <h2>Nossa Localização</h2>
+        <p>Venha nos visitar</p>
+        <div id="map"></div>
+      </div>
+    </section>
+
+    <footer id="contato">
+      <div class="container">
+      <ul>
+      <h3>SOS TUBOS</h3>
+      <p>Especialistas em tubos de papelão sustentáveis.<br>Soluções ecológicas para sua empresa.</p>
+      <div class="redes-sociais">
+        <img src="img/facebook.png" alt="facebook">
+        <img src="img/twitter.png" alt="twitter">
+        <img src="img/instagram.png" alt="instagram">
+        <img src="img/linkedin.png" alt="linkedin">
+      </div>
+      </ul>
+      <ul>
+       <h3>Links Rápidos</h3>
+       <li><a href="#">Início</a></li>
+       <li><a href="#produtos">Produtos</a></li>
+       <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+       <li><a href="#contato">Contato</a></li>
+      </ul>
+      <ul>
+    <h3>Vendas</h3>
+    <li><a href="mailto:vendas.ecotubos001@gmail.com">Paula: (11) 91640-0779</a></li>
+    <li><a href="mailto:vendas.ecotubos002@gmail.com">Sheila: (11) 97352-9553</a></li>
+    <li><a href="mailto:compras.ecotubos01@gmail.com">Mariana: (11) 97596-0393</a></li>
+      </ul>
+      <ul>
+    <h3>Endereço</h3>
+    <li>Rua Paratiba, 460</li>
+    <li>Jardim Nordeste</li>
+    <li>São Paulo - SP</li>
+    <li>Brasil</li>
+      </ul> 
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <!-- JS do Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
