@@ -3,215 +3,336 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SOS Tubos - Soluções em tubos de papelão sustentáveis para indústrias e reciclagem"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS do Leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
     <title>SOS Tubos - Tubos de Papelão Sustentáveis</title>
-    <style>
-      #map {
-        width: 100%;
-        height: 500px;
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        margin: 20px 0;
-      }
-    </style>
   </head>
   <body>
-    <div class="background-verde">
-      <header>
-        <div class="container">
-          <nav>
-            <div class="logo">
-              <a href="index.html"><img src="img/logo.png" alt="SOS Tubos - Logo" class="logo-img"></a>
-            </div>
-            <ul class="ul">
-              <li><a href="#"> Início </a></li>
-              <li><a href="#produtos"> Produtos </a></li>
-              <li><a href="#sustentabilidade"> Sustentabilidade </a></li>
-              <li><a href="#contato"> Contato </a></li>
-              <li>
-                <a href="#produtos"><button class="btn-gradiente">Solicitar Orçamento</button></a>
-              </li>
-            </ul>
-            <div class="menu-icon">
-              <img src="img/menu.png" alt="Menu" />
-            </div>
-          </nav>
-        </div>
-      </header>
-      <main>
-        <div class="container">
-          <div class="main-text">
-            <h1>Soluções em<br />Tubos de Papelão</h1>
-            <h2>Sustentabilidade e Qualidade</h2>
-            <div>
-              <button class="btn-gradiente">Entre em Contato</button>
-              <img src="img/verificado.png" alt="verificado" />
-            </div>
-          </div>
-          <div class="main-img">
-            <img src="img/tubos-banner.png" alt="Tubos de Papelão" />
-          </div>
-        </div>
-      </main>
-    </div>
-    <!--end backgroud verde-->
-    <section class="resultados">
-      <!--container-->
+    <!-- Header -->
+    <header class="header">
       <div class="container">
-        <div class="resultados-text">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="SOS Tubos" width="150" height="auto" />
+          </a>
+
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+          <ul class="nav-menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#produtos" class="btn btn-primary">Orçamento</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Soluções em Tubos de Papelão</h1>
+          <h2>Sustentabilidade e Qualidade</h2>
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-primary">Entre em Contato</a>
+            <img
+              src="img/verificado.png"
+              alt="Certificado de qualidade"
+              width="40"
+              height="40"
+            />
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="img/tubos-banner.png"
+            alt="Tubos de papelão sustentáveis"
+            width="600"
+            height="400"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <p class="stats-message">
           Comprometidos com a sustentabilidade e economia circular.
-        </div>
-        <div class="resultados-numero">
-          <p>
-            <span>100%</span>
-            Sustentável
-          </p>
-
-          <p>
-            <span>Economia</span>
-            Circular
-          </p>
-
-          <p>
-            <span>Redução</span>
-            de Resíduos
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="sobre-empresa">
-  <div class="container">
-    <h2>Sobre a SOS Tubos</h2>
-    <p>
-      Especializada em tubos de papelão para indústrias e recicláveis, a SOS Tubos atua com foco em sustentabilidade e economia circular. 
-      Nosso objetivo é fornecer soluções ecológicas e de alta qualidade para empresas que buscam reduzir resíduos e otimizar processos.
-    </p>
-    <p>
-      Com anos de experiência no mercado, mantemos um ciclo de negócios ativo através de networking e conhecimento especializado.
-    </p>
-  </div>
-</section>
-    <section class="diferencias" id="sustentabilidade">
-      <div class="container">
-        <div class="card">
-        <img src="img/recycle.png" alt="Ícone de reciclagem" />
-        <h3 class="titulo">Sustentabilidade</h3>
-        <p>
-          Em um mundo em constante evolução, nosso compromisso com a sustentabilidade
-          se mantém firme, criando soluções que respeitam o meio ambiente.
         </p>
-        </div>
-        <div class="card">
-        <img src="img/circular-economy.png" alt="Ícone de economia circular" />
-        <h3 class="titulo">Economia Circular</h3>
-        <p>
-          Nossos produtos fazem parte de um ciclo sustentável, onde os recursos são
-          aproveitados ao máximo, minimizando o impacto ambiental.
-        </p></div>
-        <div class="card">
-        <img src="img/zero-waste.png" alt="Ícone de zero resíduos" />
-        <h3 class="titulo">Redução de Resíduos</h3>
-        <p>
-          Trabalhamos constantemente para reduzir resíduos em nossos processos,
-          contribuindo para um futuro mais sustentável.
-        </p>
-      </div>
-    </section>
-    
-    <section class="melhores-lugares" id="produtos">
-      <div class="container">
-          <p class="azul">Nossos Produtos</p>
-            <h2>Soluções em Tubos de Papelão</h2>
-          <div class="cards">
-            <div class="card-item">
-              <img src="img/industrial-tube.png" alt="Tubo Industrial">
-              <p class="local-casa">Tubos Industriais</p>
-              <p class="nome-casa">Alta Resistência</p>
-              <p class="contato">
-                Ideal para aplicações<br>industriais pesadas
-              </p>
-              <button>Saiba Mais</button>
-            </div>
-
-            <div class="card-item">
-              <img src="img/commercial-tube.png" alt="Tubo Comercial">
-              <p class="local-casa">Tubos Comerciais</p>
-              <p class="nome-casa">Uso Geral</p>
-              <p class="contato">
-                Perfeito para<br>diversas aplicações
-              </p>
-              <button>Saiba Mais</button>
-            </div>
-
-            <div class="card-item">
-       <img src="img/adesivo-tape.png" alt="Fitas Adesivas">
-           <p class="local-casa">Fitas Adesivas</p>
-         <p class="nome-casa">Para Fixação</p>
-            <p class="contato">
-      Ideal para embalagens<br>e reforço de tubos
-                  </p>
-                   <button>Saiba Mais</button>
-                  </div>
-            <div class="card-item">
-              <img src="img/custom-tube.png" alt="Tubo Personalizado">
-              <p class="local-casa">Tubos Especiais</p>
-              <p class="nome-casa">Sob Medida</p>
-              <p class="contato">
-                Soluções<br>personalizadas
-              </p>
-              <button>Saiba Mais</button>
-            </div>
-            </div>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Sustentável</span>
           </div>
+          <div class="stat-item">
+            <span class="stat-number">Economia</span>
+            <span class="stat-label">Circular</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">Redução</span>
+            <span class="stat-label">de Resíduos</span>
+          </div>
+        </div>
       </div>
-      
     </section>
-    <section class="newsletter">
-  <div class="container">
-    <div class="box-newsletter">
-      <h2>Fale Conosco</h2>
-      <p>Entre em contato para orçamentos e dúvidas.</p>
-      <form>
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <input type="tel" placeholder="Seu telefone">
-        <textarea placeholder="Sua mensagem"></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-      <div class="whatsapp-btn">
-        <a href="https://wa.me/5511916400779" target="_blank">
-          <img src="img/whatsapp-icon.png" alt="WhatsApp">
-          Orçamento via WhatsApp
-        </a>
+
+    <!-- About Section -->
+    <section class="about" id="sobre">
+      <div class="container">
+        <h2>Sobre a SOS Tubos</h2>
+        <div class="about-content">
+          <p>
+            Especializada em tubos de papelão para indústrias e recicláveis, a
+            SOS Tubos atua com foco em sustentabilidade e economia circular.
+            Nosso objetivo é fornecer soluções ecológicas e de alta qualidade
+            para empresas que buscam reduzir resíduos e otimizar processos.
+          </p>
+          <p>
+            Com anos de experiência no mercado, mantemos um ciclo de negócios
+            ativo através de networking e conhecimento especializado.
+          </p>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-<section class="depoimentos">
-  <div class="container">
-    <h2>O que nossos clientes dizem</h2>
-    <div class="depoimentos-grid">
-      <div class="depoimento-card">
-        <p>“Ótima qualidade nos tubos e atendimento rápido!”</p>
-        <span>— Indústria ABC</span>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="sustentabilidade">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card">
+            <img
+              src="img/recycle.png"
+              alt="Reciclagem"
+              width="60"
+              height="60"
+            />
+            <h3>Sustentabilidade</h3>
+            <p>
+              Em um mundo em constante evolução, nosso compromisso com a
+              sustentabilidade se mantém firme, criando soluções que respeitam o
+              meio ambiente.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img
+              src="img/circular-economy.png"
+              alt="Economia circular"
+              width="60"
+              height="60"
+            />
+            <h3>Economia Circular</h3>
+            <p>
+              Nossos produtos fazem parte de um ciclo sustentável, onde os
+              recursos são aproveitados ao máximo, minimizando o impacto
+              ambiental.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img
+              src="img/zero-waste.png"
+              alt="Zero resíduos"
+              width="60"
+              height="60"
+            />
+            <h3>Redução de Resíduos</h3>
+            <p>
+              Trabalhamos constantemente para reduzir resíduos em nossos
+              processos, contribuindo para um futuro mais sustentável.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="depoimento-card">
-        <p>“Sustentabilidade e preço justo. Recomendo!”</p>
-        <span>— Recicla São Paulo</span>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="produtos">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-subtitle">Nossos Produtos</p>
+          <h2 class="section-title">Soluções em Tubos de Papelão</h2>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card">
+            <img
+              src="img/industrial-tube.png"
+              alt="Tubo industrial"
+              width="200"
+              height="200"
+            />
+            <h3>Tubos Industriais</h3>
+            <p class="product-type">Alta Resistência</p>
+            <p class="product-description">
+              Ideal para aplicações industriais pesadas
+            </p>
+            <a href="#contato" class="btn btn-secondary">Saiba Mais</a>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="img/commercial-tube.png"
+              alt="Tubo comercial"
+              width="200"
+              height="200"
+            />
+            <h3>Tubos Comerciais</h3>
+            <p class="product-type">Uso Geral</p>
+            <p class="product-description">Perfeito para diversas aplicações</p>
+            <a href="#contato" class="btn btn-secondary">Saiba Mais</a>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="img/adesivo-tape.png"
+              alt="Fitas adesivas"
+              width="200"
+              height="200"
+            />
+            <h3>Fitas Adesivas</h3>
+            <p class="product-type">Para Fixação</p>
+            <p class="product-description">
+              Ideal para embalagens e reforço de tubos
+            </p>
+            <a href="#contato" class="btn btn-secondary">Saiba Mais</a>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="img/custom-tube.png"
+              alt="Tubo personalizado"
+              width="200"
+              height="200"
+            />
+            <h3>Tubos Especiais</h3>
+            <p class="product-type">Sob Medida</p>
+            <p class="product-description">Soluções personalizadas</p>
+            <a href="#contato" class="btn btn-secondary">Saiba Mais</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-    <section class="mapa">
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <div class="container">
+        <div class="form-container">
+          <h2>Fale Conosco</h2>
+          <p>Entre em contato para orçamentos e dúvidas</p>
+
+          <form id="contactForm">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Seu nome"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Seu e-mail"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Seu telefone"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Sua mensagem"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Enviar Mensagem
+            </button>
+          </form>
+
+          <div class="whatsapp-cta">
+            <a
+              href="https://wa.me/5511916400779"
+              class="btn btn-whatsapp"
+              target="_blank"
+            >
+              <img
+                src="img/whatsapp-icon.png"
+                alt="WhatsApp"
+                width="24"
+                height="24"
+              />
+              Orçamento via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <img
+              src="img/print1.jpg"
+              alt="Feedback 1"
+              class="testimonial-image"
+            />
+          </div>
+          <div class="testimonial-card">
+            <img
+              src="img/print2.jpg"
+              alt="Feedback 2"
+              class="testimonial-image"
+            />
+          </div>
+          <div class="testimonial-card">
+            <img
+              src="img/print3.jpg"
+              alt="Feedback 3"
+              class="testimonial-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
       <div class="container">
         <h2>Nossa Localização</h2>
         <p>Venha nos visitar</p>
@@ -219,43 +340,98 @@
       </div>
     </section>
 
-    <footer id="contato">
+    <!-- Footer -->
+    <footer class="footer" id="contato">
       <div class="container">
-      <ul>
-      <h3>SOS TUBOS</h3>
-      <p>Especialistas em tubos de papelão sustentáveis.<br>Soluções ecológicas para sua empresa.</p>
-      <div class="redes-sociais">
-        <img src="img/facebook.png" alt="facebook">
-        <img src="img/twitter.png" alt="twitter">
-        <img src="img/instagram.png" alt="instagram">
-        <img src="img/linkedin.png" alt="linkedin">
-      </div>
-      </ul>
-      <ul>
-       <h3>Links Rápidos</h3>
-       <li><a href="#">Início</a></li>
-       <li><a href="#produtos">Produtos</a></li>
-       <li><a href="#sustentabilidade">Sustentabilidade</a></li>
-       <li><a href="#contato">Contato</a></li>
-      </ul>
-      <ul>
-    <h3>Vendas</h3>
-    <li><a href="mailto:vendas.ecotubos001@gmail.com">Paula: (11) 91640-0779</a></li>
-    <li><a href="mailto:vendas.ecotubos002@gmail.com">Sheila: (11) 97352-9553</a></li>
-    <li><a href="mailto:compras.ecotubos01@gmail.com">Mariana: (11) 97596-0393</a></li>
-      </ul>
-      <ul>
-    <h3>Endereço</h3>
-    <li>Rua Paratiba, 460</li>
-    <li>Jardim Nordeste</li>
-    <li>São Paulo - SP</li>
-    <li>Brasil</li>
-      </ul> 
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>SOS TUBOS</h3>
+            <p>
+              Especialistas em tubos de papelão sustentáveis. Soluções
+              ecológicas para sua empresa.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><img
+                  src="img/facebook.png"
+                  alt="Facebook"
+                  width="24"
+                  height="24"
+              /></a>
+              <a href="#" aria-label="Instagram"
+                ><img
+                  src="img/instagram.png"
+                  alt="Instagram"
+                  width="24"
+                  height="24"
+              /></a>
+              <a href="#" aria-label="LinkedIn"
+                ><img
+                  src="img/linkedin.png"
+                  alt="LinkedIn"
+                  width="24"
+                  height="24"
+              /></a>
+              <a href="#" aria-label="Twitter"
+                ><img
+                  src="img/twitter.png"
+                  alt="Twitter"
+                  width="24"
+                  height="24"
+              /></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#produtos">Produtos</a></li>
+              <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Vendas</h3>
+            <ul>
+              <li>
+                <a href="mailto:vendas.ecotubos001@gmail.com"
+                  >Paula: (11) 91640-0779</a
+                >
+              </li>
+              <li>
+                <a href="mailto:vendas.ecotubos002@gmail.com"
+                  >Sheila: (11) 97352-9553</a
+                >
+              </li>
+              <li>
+                <a href="mailto:compras.ecotubos01@gmail.com"
+                  >Mariana: (11) 97596-0393</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Endereço</h3>
+            <address>
+              Rua Paratiba, 460<br />
+              Jardim Nordeste<br />
+              São Paulo - SP<br />
+              Brasil
+            </address>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2023 SOS Tubos. Todos os direitos reservados.</p>
+        </div>
       </div>
     </footer>
-    <script src="js/main.js"></script>
-    <!-- JS do Leaflet -->
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
